@@ -13,7 +13,7 @@ const QuickAction = ({ backgroundColor, text, size, name, onclick }) => {
     };
     const subscription = Dimensions.addEventListener("change", updateDimensions);
 
-    // Cleanup the subscription when the component unmounts
+    
     return () => subscription.remove();
   }, []);
 
